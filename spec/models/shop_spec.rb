@@ -46,6 +46,6 @@ describe "Shop" do
   it "returns everyone who bought bikes from a shop" do
     shop = Shop.find_by(:name => "Salvagetti")
 
-    expect(shop.buyers).to match_array(["Mark", "John"])
+    expect(shop.buyers_names).to match_array(["Mark", "John"])
   end
 end
